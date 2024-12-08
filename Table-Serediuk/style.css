@@ -10,17 +10,70 @@ body {
     animation: gradientAnimation 10s ease infinite;
 }
 
+  .container {
+    text-align: center;
+  }
+
+  .legend {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+  }
+
+  .legend-item .family {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+  }
+
+  .metalloid { background-color: rgb(12, 122, 77); }
+  .alkali-metal { background-color:  #1d8cfc; } 
+  .alkaline-earth { background-color: burlywood; }
+  .transition-metal { background-color: gold; } 
+  .post-transition-metal { background-color: rgb(115, 156, 91);} 
+  .halogen { background-color: thistle; } 
+  .lanthanide { background-color: rgb(157, 19, 175); } 
+  .actinide { background-color:rgb(219, 147, 248); } 
+  .noble-gas { background-color: rgb(24, 141, 209); }
+
+  .table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .element {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
 
 .table-title {
-    font-family: 'Georgia', serif;
-    font-size: 42px;
-    font-weight: bold;
-    text-align: center;
-    color: #ffffff; 
-    margin: 20px 0;
-    text-decoration-thickness: 3px; 
+    font-size: 30px; 
+    color: #ca7025; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); 
+    margin: 0;
 }
-
 
 .table {
     display: grid;
@@ -293,7 +346,7 @@ body {
     background-color:gold;
 }
 
-.Rentgen{
+.Röntgen{
     background-color:gold;
 }
 
